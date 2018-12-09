@@ -6,20 +6,14 @@ std     0.008860
 
 Custom CNN
 
-{'batch_size': 32,
- 'epochs': 30,
- 'opt_alg': keras.optimizers.Adam,
- 'opt_lr': 0.0001,
- 'l2_a': 0.1}
-
 5-fold CV averaged by 5 attempts, valid score
 	f1	                    prec	                recall	                acc
     mean	    std	        mean	    std	        mean	    std	        mean	    std
-off	0.951942	0.017984	0.945239	0.041833	0.960116	0.019527	0.956549	0.01583
-on	0.960183	0.014291	0.966602	0.016853	0.954793	0.034627	0.956549	0.01583
+off	0.957033	0.027376	0.951615	0.043918	0.963901	0.033404	0.963328	0.022291
+on	0.967940	0.018867	0.972544	0.026935	0.964184	0.030540	0.963328	0.022291
 
 
-TL CNN
+Fine-tuned VGG
 
 5-fold CV valid score
 	f1	                    prec	                recall	                acc
