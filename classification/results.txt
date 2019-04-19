@@ -4,23 +4,19 @@ mean    0.977029
 std     0.008860
 
 
-Custom CNN
+Only rectangular datasets
 
-5-fold CV averaged by 5 attempts, valid score
+5-fold CV averaged by 5 attempts, valid score, custom CNN
 	f1	                    prec	                recall	                acc
     mean	    std	        mean	    std	        mean	    std	        mean	    std
 off	0.957033	0.027376	0.951615	0.043918	0.963901	0.033404	0.963328	0.022291
 on	0.967940	0.018867	0.972544	0.026935	0.964184	0.030540	0.963328	0.022291
 
-
-Fine-tuned VGG
-
-5-fold CV valid score
+5-fold CV valid score, fine-tuned VGG
 	f1	                    prec	                recall	                acc
     mean	    std	        mean	    std	        mean	    std	        mean	    std
 off	0.963618	0.018958	0.948500	0.041635	0.980297	0.010521	0.967051	0.016629
 on	0.969843	0.014956	0.983243	0.008217	0.957459	0.033645	0.967106	0.016781
-
 
 5-fold CV averaged by 5-CV with select best model and TTA, real image mask as second channel, valid score
     f1	                    prec	                recall	                acc
@@ -28,10 +24,17 @@ on	0.969843	0.014956	0.983243	0.008217	0.957459	0.033645	0.967106	0.016781
 off	0.968362	0.023722	0.947379	0.039702	0.990839	0.007010	0.973019	0.019323
 on	0.976612	0.016249	0.992963	0.005821	0.960998	0.026827	0.973352	0.018954
 
-
 5-fold CV averaged by 5-CV with averaged between 5 attempts and three models: cnn with TTA, nn on pixels, lr on pixels
 	f1						prec					recall					acc						fold
 	mean		std			mean		std			mean		std			mean		std			mean	std
 off	0.977708	0.013283	0.979201	0.013803	0.976473	0.021512	0.981041	0.011146	2	1.581139
 on	0.983431	0.009789	0.982168	0.017700	0.984868	0.008969	0.981041	0.011146	2	1.581139
 
+
+Full GS
+
+5-fold CV valid score, fastai resnet34
+	f1						prec					recall					acc						fold
+	mean		std			mean		std			mean		std			mean		std			mean	std
+off	0.988241	0.006581	0.986273	0.008232	0.990228	0.005727	0.990259	0.005466	2	1.581139
+on	0.991685	0.004675	0.993100	0.004056	0.990280	0.005857	0.990259	0.005466	2	1.581139

@@ -196,7 +196,6 @@ class KerasCNN(object):
     def __init__(self, image_shape, save_path='custom-cnn-weights.hdf5'):
         self.save_path = save_path
         self.data_gen = OffSampleImageDataGenerator(**self.data_gen_args)
-        self.model = None
         self.args = dict(input_shape=(image_shape + (1,)),
                          opt=keras.optimizers.Adam(lr=5e-4),
                          l2_a=0.01,
@@ -206,6 +205,7 @@ class KerasCNN(object):
                          act_f='relu',
                          kernel_initializer='glorot_uniform',
                          metrics=[keras.metrics.binary_accuracy])
+        self.model = create_cnn(**self.args)
 
     def fit(self, X_train, y_train, X_valid=None, y_valid=None,
             epochs=20, batch_size=32, seed=13):
@@ -220,7 +220,6 @@ class KerasCNN(object):
         else:
             validation_data = None
 
-        self.model = create_cnn(**self.args)
         return self.model.fit_generator(self.data_gen.flow(X_train, y_train, batch_size=batch_size, seed=seed),
                                          epochs=epochs, validation_data=validation_data,
                                          steps_per_epoch=len(X_train) / batch_size,
