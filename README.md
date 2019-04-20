@@ -11,15 +11,19 @@ of the biological sample.
 
 Examples of **on-sample** ion images:
 
-<img src="images/on-1.png" alt="on-sample example 1" height=150>
-<img src="images/on-2.png" alt="on-sample example 2" height=150>
-<img src="images/on-3.png" alt="on-sample example 3" height=150>
+<p float="left">
+    <img src="images/on-1.png" alt="on-sample example 1" height=150>
+    <img src="images/on-2.png" alt="on-sample example 2" height=150>
+    <img src="images/on-3.png" alt="on-sample example 3" height=150>
+</p>
 
 Examples of **off-sample**  ion images:
 
-<img src="images/off-1.png" alt="off-sample example 1" height=150>
-<img src="images/off-2.png" alt="off-sample example 2" height=150>
-<img src="images/off-3.png" alt="off-sample example 3" height=150>
+<p float="left">
+    <img src="images/off-1.png" alt="off-sample example 1" height=150>
+    <img src="images/off-2.png" alt="off-sample example 2" height=150>
+    <img src="images/off-3.png" alt="off-sample example 3" height=150>
+</p>
 
 # Results
 
