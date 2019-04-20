@@ -115,7 +115,6 @@ dependencies:
   - fastprogress=0.1.18=py_0
   - torchvision=0.2.1=py_0
   - cuda92=1.0=0
-  - pytorch=0.4.1=py37_cuda9.2.148_cudnn7.1.4_1
   - pytorch-nightly=1.0.0.dev20181206=py3.7_cuda9.2.148_cudnn7.4.1_0
   - pip:
     - msgpack==0.5.6
