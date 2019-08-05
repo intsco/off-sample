@@ -9,6 +9,9 @@ the Project [Metaspace](https://metaspace2020.eu) with purpose to help its users
 to automatically filter out molecular search results that represent the area outside
 of the biological sample.
 
+The model is used in Metaspace as a service with simple API. [Here](https://github.com/metaspace2020/metaspace/tree/master/metaspace/off-sample)
+are the details of the model inference service.
+
 Examples of **on-sample** ion images:
 
 <p float="left">
