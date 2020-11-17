@@ -55,8 +55,7 @@ It includes 23238 manually tagged ion images, of them 13325 belong to the “off
 # Requirements
 
 * Ubuntu >= 14.04
-* Conda >= 4.5.11
-* fastai==1.0.34
+* fastai==2.1.5
 * pytorch>=1.0
 * Nvidia GPU for fast training
 
@@ -65,24 +64,17 @@ All dependencies can be installed using the provided conda environment files.
 
 # Setup
 
-* Clone repository
-* Create conda environment
-
+* Clone repository and install dependencies
 ```
-cd classification
-conda env create -n fastai --file fastai-env.yml
-conda activate fastai
+pip install -r requirements.txt
 ```
 
 * If Jupyter is already installed, add a new kernel
-
 ```
 python -m ipykernel install --user --name fastai --display-name fastai
 ```
 
 * Otherwise install Jupyter into the environment
-
 ```
-conda install jupyter
+pip install jupyter
 ```
-
